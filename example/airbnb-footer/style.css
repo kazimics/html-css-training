@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+}
+label {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  color: white;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  background-color: #282c34;
+  border: 1px solid blck;
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+article {
+  width: 120px;
+  border: 1px solid #d6d0d0;
+  margin-bottom: 420px;
+}
+footer {
+  background-color: #fff;
+  border-top: 1px solid #beb8b8;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
+input:checked ~ footer {
+  display: block;
+}
+
+.content {
+  padding-top: 50px;
+  width: 55%;
+  margin: 0 auto;
+}
+.content>div:first-child {
+  width: 100%;
+  float: left;
+  padding-bottom: 20px;
+}
+.col {
+  width: 28.33%;
+  float: left;
+  padding-right: 50px;
+}
+.col:last-child {
+  width: 15%;
+}
+ul {
+  list-style: none;
+}
+li a {
+  line-height: 1.5;
+  color: #767676;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+.new::after {
+  content: "new";
+  display: inline-block;
+  padding: 2px 4px;
+  margin-left: 10px;
+  color: white;
+  border-radius: 4px;
+  background-color: #006a70;
+}
+.col svg {
+  margin-top: 45px;
+  margin-bottom: 25px;
+  height: 1em;
+  width: 1em; 
+  fill: currentcolor;
+  display: block;
+}
+.copyright {
+  border-top: 1px solid #beb8b8;
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.copyright svg {
+  display: inline-block;
+  margin-bottom: -6px;
+  height: 1.5em;
+  width: 1.5em; 
+  fill: rgb(118, 118, 118);
+}
+.copyright div:first-child {
+  margin-top: 10px;
+  float: left;
+}
+.copyright div:last-child {
+  float: right;
+}
+div>a {
+  float: right;
+  margin-right: 20px;
+  border: 1px solid #dad3d3;
+  margin-top: 10px;
+  padding: 3px 10px;
+  color: #767676;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 2px;
+}
+div>a:hover {
+  background-color: #f2f2f2;
+}
+div>a:nth-child(1) {
+  margin-right: 0;
+}
